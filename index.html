@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Back to the Bin</title><!-- b2tb is a good abbr. -->
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="styles/main.css"/>
+    </head>
+    <body>
+        <div id="container"></div>
+		<div id="pauseMenu"></div>
+        <div id="hud">
+			<div id="lives"></div>
+		</div>
+		<audio id="toggle" src='audio/effects/other/Toggle-SoundBible.com-231290292.mp3'></audio>
+		<!--audio id="bgm1" src='audio/bgm/other/Crash Twinsanity Music - N.Sanity Island Extended.mp3'></audio>
+        <audio id="bgm2" src='audio/bgm/other/Crash Twinsanity Music - High Seas Hi-Jinks Extended (1).mp3'></audio>
+		<audio id="bgm3" src='audio/bgm/other/Crash Twinsanity Music - Worm Chase Extended.mp3'></audio><!---->
+		<script>
+            if (typeof module==="undefined") document.writeln("<script data-main=\"scripts/main\" src=\"scripts/ext/require.js\">\<\/script>");
+            else{//this is if electron is still being stupid.
+                var base=module.paths[0].replace('/node_modules',"")+"/";
+                //throw base;
+                module.paths.push(base+"scripts");
+                module.paths.push(base+"scripts/ext");
+                module.paths.push(base+"scripts/ext/gamepad.js-master");
+                window.Matter=require("matter.js");
+                /*window.$=*/
+                window.$=require("jquery-3.3.1.js");
+                window.Gpjs=require("gamepad.js");
+                //window.Gp=require("gamepad-abstraction.js");
+				window.globalLevels=require("levels.js");
+                require("main.js");
+            }
+        </script>
+    </body>
+</html>

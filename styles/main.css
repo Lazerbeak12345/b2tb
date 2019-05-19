@@ -1,0 +1,45 @@
+#container,
+#hud{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	color:white;
+	font-size:2em;
+}
+#hud{
+	text-align:right;
+}
+#container{
+	text-align:center;
+}
+#hud button{
+	/*background-color:white;*/
+	background-color:rgba(0,0,0,0);
+	/*color:rgb(24, 24, 29);*/
+	color:white;
+	border:0px;
+	padding:1em;
+	margin:0px;
+}
+#hud button:hover{
+	background-color:lightgrey;
+	color:rgb(24, 24, 29);
+}
+#hud button:active{
+	background-color:grey;
+	color:rgb(24, 24, 29);
+}
+#hud button:focus{
+	border:.5em solid grey;
+	padding:.5em;
+}
+body{
+	overflow:hidden;
+	background-color:#313131;
+	margin:0px;
+}
+/*#container canvas{
+	margin:0px;
+}*/
