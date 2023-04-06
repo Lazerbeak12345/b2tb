@@ -1,0 +1,23 @@
+{
+  "name": "b2tb",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Back to the bin is a game I made during the end of my Senior year at highschool.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lazerbeak12345/b2tb.git"
+  },
+  "author": "Lazerbeak12345",
+  "license": "UNLICENCED",
+  "bugs": {
+    "url": "https://github.com/Lazerbeak12345/b2tb/issues"
+  },
+  "homepage": "https://github.com/Lazerbeak12345/b2tb#readme",
+  "dependencies": {
+    "jquery": "^3.6.4"
+  }
+}

@@ -719,7 +719,7 @@ if (typeof module==="undefined") {//if i want since i'm on electron 4, I must do
 	requirejs.config({
 		baseUrl: 'scripts',
 		paths: {
-			jquery: 'ext/jquery-3.3.1',
+			jquery: 'https://unpkg.com/jquery@3.6.4/dist/jquery',
 			matter:'ext/matter',
 			"poly-decomp":'ext/poly-decomp0.3.0modified',
 			"gamepadjs":"ext/gamepad.js-master/gamepad",
